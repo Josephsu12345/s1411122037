@@ -1,0 +1,35 @@
+### HTML  5
+HTML 是用来構建網頁的標準语言。它使用**標籤**（元素）来定义网页中的不同部分，例如段落、图片、标题等。
+重點：
+
+1. **`<!DOCTYPE html>`**：声明文档类型和 HTML 版本，告诉浏览器该文档是 HTML5。
+
+2. **`<html>`**：根元素，包含网页的所有内容。
+
+3. **`<head>`**：包含文档的元信息，如标题和元标签（meta）。这些内容不会在页面上显示。
+
+   - **`<title>`**：网页的标题，显示在浏览器标签中。
+   - **`<meta>`**：提供网页的元数据，`viewport` 设置网页视口的宽度以适应不同设备的屏幕。你的例子中 **`width-device-width`** 应修正为 **`width=device-width`**。
+
+4. **`<body>`**：一個區塊，包含网页的可见内容，如文本、图像和链接。
+
+5. **`<header>`**：定义页面的头部区域，通常包含导航或介绍性内容，透過名字或標籤來定義
+6. **`<article>`**：定义独立的内容单元，例如文章或博客帖子。在这里面使用了 **`<img>`** 标签。
+
+如果header移到body就不會顯示在網頁，一定要放在body裡，曹狀式結構
+
+
+Examples:
+href= "http://www.w3schools.com">This is a link</a> 超連結語法
+Href寫在祈使標籤，透過href連結到網址
+
+<div #="masthead">
+<h1 ="logo"img suc-"images/rl logo.png" /></h1>
+src告訴照片在哪個網址顯示
+</div>
+<ul id="nav">
+<hix<a tile="Red Lantern home" htEl index.html'>Home</a</hi> 
+Title 幫助視障者更容易瀏覽頁面
+所有網頁id都要一樣或是唯一一個
+如果要特殊定義一樣屬性要加上同樣例如sec”class” 名稱一樣的屬性也會一樣
+
