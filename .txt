@@ -33,3 +33,8 @@ Title 幫助視障者更容易瀏覽頁面
 所有網頁id都要一樣或是唯一一個
 如果要特殊定義一樣屬性要加上同樣例如sec”class” 名稱一樣的屬性也會一樣
 
+一致性：tag, class （在class 名稱前加句號.）
+獨特性：id（在id名稱前加sharp符號#）
+navi
+float: right;
+margin: 50px 10px 0 0; font-size: 1.4em;
