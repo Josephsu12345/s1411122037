@@ -1,3 +1,5 @@
+0920課堂筆記
+
 ### HTML  5
 HTML 是用来構建網頁的標準语言。它使用**標籤**（元素）来定义网页中的不同部分，例如段落、图片、标题等。
 重點：
@@ -38,3 +40,40 @@ Title 幫助視障者更容易瀏覽頁面
 navi
 float: right;
 margin: 50px 10px 0 0; font-size: 1.4em;
+
+___________________________________________________________________
+
+0927課堂筆記
+網頁結構：
+
+Meta name：輸入關鍵字當別人查詢時就可以找到你的網頁
+響應式網頁
+1.<div id  =main>
+主標題可以放圖片或標題
+
+背景可以是圖片也可以是字
+2.選單：<div id =menu>
+3.主要內容區域
+<div id >or <article id >
+4.頁腳
+<footer is =footer>
+
+網頁最常見的標籤：<div >意思是去描述一個區塊叫無意義
+
+5. <header>：定義頁面的頭部區域，通常包含導航或介紹性內容，透過名字或標籤來定義
+6. <article>：定義獨立的內容單元，例如文章或部落格貼文。這裡面使用了 **`<img>`** 標籤。
+‹div id="main" >
+<header id="header">
+‹div id="logo"›
+<h1>Black & White</h1>
+<h2>Slogan</h2>
+</div>
+</header>
+‹div id="menu">
+密碼欄位
+<form action= “”> 表單標籤
+<label for =“account”> Login name</label> 
+<input type =“text” id=“account”>
+<label for =“account”> password </label>
+<input type =“text” id=“passward”>
+<input type =“text” id=“submit”>
