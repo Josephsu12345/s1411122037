@@ -77,3 +77,38 @@ Meta name：輸入關鍵字當別人查詢時就可以找到你的網頁
 <label for =“account”> password </label>
 <input type =“text” id=“passward”>
 <input type =“text” id=“submit”>
+
+1004課堂筆記
+CSS網頁設計
+#menu{
+          width: 674px;
+          background: linear-gradient（口#333，口#909）；margin-left: 3px;
+｝
+#menu ul｛
+list-style: none;
+｝
+#menu ul li {
+display: inline;
+}
+#menu ul li a {
+color: 口#fff;
+#fff;
+text-decoration: none ;
+padding-top: 5px;
+height:30px;
+width:90px;
+float:left;
+display: block;
+text-align:center;
+
+1.color: 口#fff;` 將文字顏色設置為白色 (#fff)，但此處有一個錯誤字符「口」，應將其去除。
+2.text-decoration: none;` 移除了超連結的默認下劃線。
+3.padding-top: 5px;` 為超連結的上方設置了 5px 的內邊距，讓文本看起來有一些間距。
+5.height: 30px;` 設置了超連結的高度為 30px，控制每個選單項的高度。
+6.width: 90px;` 設置了寬度為 90px，控制選單項的寬度。
+#menu` 代表一個具有 `id="menu"` 的元素，表示這裡為一個選單的容器。
+7.width: 674px;` 定義了這個容器的寬度為 674 像素。
+8.background: linear-gradient(口#333，口#909);` 使用了線性漸變作為背景色，從深灰色 (#333) 漸變到較淺的灰色 (#909)，但此處有中文字符「口」，應該是錯誤的標記符號，應該改為逗號或省略「口」。
+margin-left: 3px;` 將容器的左側邊距設置為 3px，使選單略微向右偏移。
+#menu ul` 針對選單內的 `ul` (無序列表)。
+list-style: none;` 移除了無序列表項 (`li`) 的預設圓點或項目符號。
