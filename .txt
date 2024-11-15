@@ -77,6 +77,7 @@ Meta name：輸入關鍵字當別人查詢時就可以找到你的網頁
 <label for =“account”> password </label>
 <input type =“text” id=“passward”>
 <input type =“text” id=“submit”>
+__________________________________________________________________
 
 1004課堂筆記
 CSS網頁設計
@@ -112,3 +113,6 @@ text-align:center;
 margin-left: 3px;` 將容器的左側邊距設置為 3px，使選單略微向右偏移。
 #menu ul` 針對選單內的 `ul` (無序列表)。
 list-style: none;` 移除了無序列表項 (`li`) 的預設圓點或項目符號。
+__________________________________________________________________
+1101課堂筆記
+網頁設計
