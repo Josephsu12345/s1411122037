@@ -95,6 +95,167 @@
             </div>
         </div>
 
+        <div class="scroll-container">
+          <!-- 完整步槍圖 -->
+          <img src="weapeeee.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+            <p class="card-text"></p>
+          </div>
+          
+          <!-- 各零件 -->
+          <img class="part" id="part1" src="槍托.png"  alt="零件1">
+          <img class="part" id="part2" src="夾加下身.png" alt="零件2">
+          <img class="part" id="part3" src="身上.png" alt="零件3">
+          <img class="part" id="part4" src="瞄準.png" alt="零件4">
+          <img class="part" id="part5" src="消.png"  alt="零件5">
+          <img class="part" id="part6" src="槍前.png"  alt="零件6">
+          <img class="part" id="part7" src="管.png"  alt="零件7">
+          <img class="part" id="part8" src="手電.png"  alt="零件8">
+          <img class="part" id="part9" src="握加雷.png"  alt="零件9">
+          <!-- 增加更多零件按需求 -->
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <script src="script.js"></script>
+        <style>
+          body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+      }
+      
+      .scroll-container {
+        height: 500vh; /* 模擬滾動區域 */
+        position: relative;
+      }
+      
+      #gun {
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1600px;
+      }
+      
+      .part {
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 450px;
+        opacity: 0; /* 初始隱藏 */
+      }
+      
+        </style>
+        <script>
+          // 啟用 GSAP 和 ScrollTrigger
+      gsap.registerPlugin(ScrollTrigger);
+      
+      // 定義各零件的動畫
+      gsap.to("#part1", {
+        scrollTrigger: {
+          trigger: ".scroll-container",
+          start: "top center", // 滾動開始
+          end: "bottom center", // 滾動結束
+          scrub: true, // 滾動連接動畫
+        },
+        x: -670, // 零件移動到左側
+        opacity: 1, // 逐漸顯示
+      });
+      
+      gsap.to("#part2", {
+        scrollTrigger: {
+          trigger: ".scroll-container",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        },
+        x: -250,y: 20, // 零件移動到下方
+        opacity: 1,
+      });
+      
+      gsap.to("#part3", {
+        scrollTrigger: {
+          trigger: ".scroll-container",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        },
+        x: -250,y: -50, // 零件移動到右側
+        opacity: 1,
+      });
+      
+      gsap.to("#part4", {
+        scrollTrigger: {
+          trigger: ".scroll-container",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        },
+        x: -140,y: -270, // 零件移動到右側
+        opacity: 1,
+      });
+      
+      gsap.to("#part5", {
+        scrollTrigger: {
+          trigger: ".scroll-container",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        },
+        x: 650,y: -45, // 零件移動到右側
+        opacity: 1,
+      });
+      
+      gsap.to("#part6", {
+        scrollTrigger: {
+          trigger: ".scroll-container",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        },
+        x: 200,y: -100, // 零件移動到右側
+        opacity: 1,
+      });
+      
+      gsap.to("#part7", {
+        scrollTrigger: {
+          trigger: ".scroll-container",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        },
+        x: 300,y:30, // 零件移動到右側
+        opacity: 1,
+      });
+      
+      gsap.to("#part8", {
+        scrollTrigger: {
+          trigger: ".scroll-container",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        },
+        x: 300,y:450, // 零件移動到右側
+        opacity: 1,
+      });
+      
+      gsap.to("#part9", {
+        scrollTrigger: {
+          trigger: ".scroll-container",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+        },
+        x: 300,y:250, // 零件移動到右側
+        opacity: 1,
+      });
+      // 你可以根據零件數量，複製這段程式碼並修改目標位置。
+      
+        </script>
+        
 
         <div class="card bg-dark text-white">
             <img src="3D gun-1.jpg" class="card-img" alt="...">
