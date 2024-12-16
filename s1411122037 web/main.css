@@ -23,6 +23,9 @@ body {
     cursor: pointer;
     color: rgb(255, 255, 255);
     transition: color 0.3s ease;
+    /* background-image: url("./basic.jpg");
+    background-size: 100px 50px; */
+   
 }
 
 .section h1 {
@@ -40,9 +43,12 @@ body {
 }
 
 /* 當滑鼠懸停時的效果 */
+
+ 
 .section:hover h1 {
     transform: translateY(-10px);
-    color: #f8f804;
+    color: #fdb604;
+
 }
 
 .section:hover p {

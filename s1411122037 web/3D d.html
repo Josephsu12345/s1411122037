@@ -156,6 +156,16 @@
          /* 武器初始隱藏 */
       }
 
+    
+/* 手機版 (小於 768px) */
+@media (max-width: 767px) {
+    .part {
+      width: 180px; /* 縮小比例 */
+    
+    }
+}
+
+
       #part1 {
         top: 51%;
         /* 初始位置示例 */
@@ -216,10 +226,21 @@
         left: 46%;
         scale: 0.3;
       }
+      .part {
+  position: fixed;
+  width: calc(20vw + 90px); /* 寬度根據視口和固定像素計算 */
+  height: auto; /* 保持比例 */
+}
+
     </style>
     <script>
         // 啟用 GSAP 和 ScrollTrigger
         gsap.registerPlugin(ScrollTrigger);
+        // 定義媒體查詢
+const mm = gsap.matchMedia();
+
+// 電腦版動畫設定
+mm.add("(min-width: 768px)", () => {
 
         // 定義各零件的動畫
         gsap.to("#part1", {
@@ -229,10 +250,11 @@
             end: "bottom center", // 滾動結束
             scrub: true, // 滾動連接動畫
           },
-          x: -240,// 零件移動到左側
+          x: -180,// 零件移動到左側
           opacity: 1, // 逐漸顯示
         });
 
+        
         gsap.to("#part2", {
           scrollTrigger: {
             trigger: ".scroll-container",
@@ -240,10 +262,11 @@
             end: "bottom center",
             scrub: true,
           },
-          x: -250, y: -150, // 零件移動到下方
+          x: -100, y: -230, // 零件移動到下方
           opacity: 1,
         });
 
+        
         gsap.to("#part3", {
           scrollTrigger: {
             trigger: ".scroll-container",
@@ -251,7 +274,7 @@
             end: "bottom center",
             scrub: true,
           },
-          x: -250, y: -50, // 零件移動到右側
+          x: -100, y: -150, // 零件移動到右側
           opacity: 1,
         });
 
@@ -262,7 +285,7 @@
             end: "bottom center",
             scrub: true,
           },
-          x: -250, y: -200, // 零件移動到右側
+          x: -120, y: -300, // 零件移動到右側
           opacity: 1,
         });
 
@@ -273,7 +296,7 @@
             end: "bottom center",
             scrub: true,
           },
-          x: -300, y: -60, // 零件移動到右側
+          x: -200, y: -90, // 零件移動到右側
           opacity: 1,
         });
 
@@ -284,7 +307,7 @@
             end: "bottom center",
             scrub: true,
           },
-          x: 150, y: -230, // 零件移動到右側
+          x: 140, y: -240, // 零件移動到右側
           opacity: 1,
         });
 
@@ -295,7 +318,7 @@
             end: "bottom center",
             scrub: true,
           },
-          x: -150, y: 80, // 零件移動到右側
+          x: 100, y: 80, // 零件移動到右側
           opacity: 1,
         });
 
@@ -306,7 +329,7 @@
             end: "bottom center",
             scrub: true,
           },
-          x: -100, y: 120, // 零件移動到右側
+          x: 240, y: 140, // 零件移動到右側
           opacity: 1,
         });
 
@@ -317,7 +340,7 @@
             end: "bottom center",
             scrub: true,
           },
-          x: -40, y: 350, // 零件移動到右側
+          x: 280, y: 350, // 零件移動到右側
           opacity: 1,
         });
         gsap.to("#part10", {
@@ -327,10 +350,127 @@
             end: "bottom center",
             scrub: true,
           },
-          x: -150, y: 40, // 零件移動到右側
+          x: 100, y: 40, // 零件移動到右側
           opacity: 1,
         });
         // 你可以根據零件數量，複製這段程式碼並修改目標位置。
+});
+  // 手機版動畫設定
+mm.add("(max-width: 767px)", () => {
+  // 針對手機版的動畫      
+     // 定義各零件的動畫
+     gsap.to("#part1", {
+          scrollTrigger: {
+            trigger: ".scroll-container",
+            start: "top center", // 滾動開始
+            end: "bottom center", // 滾動結束
+            scrub: true, // 滾動連接動畫
+          },
+          x: -70,// 零件移動到左側
+          opacity: 1, // 逐漸顯示
+        });
+
+        
+        gsap.to("#part2", {
+          scrollTrigger: {
+            trigger: ".scroll-container",
+            start: "top center",
+            end: "bottom center",
+            scrub: true,
+          },
+          x: -50, y: -150, // 零件移動到下方
+          opacity: 1,
+        });
+
+        
+        gsap.to("#part3", {
+          scrollTrigger: {
+            trigger: ".scroll-container",
+            start: "top center",
+            end: "bottom center",
+            scrub: true,
+          },
+          x: -50, y: -40, // 零件移動到右側
+          opacity: 1,
+        });
+
+        gsap.to("#part4", {
+          scrollTrigger: {
+            trigger: ".scroll-container",
+            start: "top center",
+            end: "bottom center",
+            scrub: true,
+          },
+          x: -50, y: -50, // 零件移動到右側
+          opacity: 1,
+        });
+
+        gsap.to("#part5", {
+          scrollTrigger: {
+            trigger: ".scroll-container",
+            start: "top center",
+            end: "bottom center",
+            scrub: true,
+          },
+          x: -100, y: 20, // 零件移動到右側
+          opacity: 1,
+        });
+
+        gsap.to("#part6", {
+          scrollTrigger: {
+            trigger: ".scroll-container",
+            start: "top center",
+            end: "bottom center",
+            scrub: true,
+          },
+          x: 10, y: -20, // 零件移動到右側
+          opacity: 1,
+        });
+
+        gsap.to("#part7", {
+          scrollTrigger: {
+            trigger: ".scroll-container",
+            start: "top center",
+            end: "bottom center",
+            scrub: true,
+          },
+          x: 10, y: 90, // 零件移動到右側
+          opacity: 1,
+        });
+
+        gsap.to("#part8", {
+          scrollTrigger: {
+            trigger: ".scroll-container",
+            start: "top center",
+            end: "bottom center",
+            scrub: true,
+          },
+          x: 30, y: 100, // 零件移動到右側
+          opacity: 1,
+        });
+
+        gsap.to("#part9", {
+          scrollTrigger: {
+            trigger: ".scroll-container",
+            start: "top center",
+            end: "bottom center",
+            scrub: true,
+          },
+          x: 40, y: 220, // 零件移動到右側
+          opacity: 1,
+        });
+        gsap.to("#part10", {
+          scrollTrigger: {
+            trigger: ".scroll-container",
+            start: "top center",
+            end: "bottom center",
+            scrub: true,
+          },
+          x: 10, y: 140, // 零件移動到右側
+          opacity: 1,
+        });
+        // 你可以根據零件數量，複製這段程式碼並修改目標位置。
+});
 
     </script>
 
