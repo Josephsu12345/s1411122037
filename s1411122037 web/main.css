@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: url("black.jpg");
+    background-image: url("landscape-1.jpg");
     background-size: cover;
     background-position: center;
     transition: background 0.5s ease-in-out;
@@ -47,7 +47,8 @@ body {
  
 .section:hover h1 {
     transform: translateY(-10px);
-    color: #fdb604;
+    color: #ffffff;
+    
 
 }
 
